@@ -3,7 +3,6 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#il-progetto">Il progetto: the counter</a></li>
-    <li><a href="#utilizzo">Utilizzo</a></li>
   </ol>
 </details>
 
@@ -12,13 +11,21 @@
 <!-- ABOUT THE PROJECT -->
 ## Il progetto
 
-![Anteprima del progetto](https://github.com/ElisabettaNale/javascript_practice/blob/main/img/screenshot.png)
+Questo progetto è una semplice applicazione che funziona come un counter di numeri interi.<br> 
+Il counter è inizializzato a zero e permette all'utente di aumentare e decrementare il valore di uno (i numeri negativi sono permessi).
+L'applicazione presenta un'interfaccia semplice.<br>
+In alto viene visualizzato il valore del counter, in basso vi sono tre pulsanti: uno per aumentare, uno per decrementare il valore del counter, uno di reset per ritornare alla configurazione iniziale.<br>
+<br>
+Qui trovi la preview del progetto:
 
-Here's
+<p align="center">
+    <img src="https://github.com/ElisabettaNale/javascript_practice/blob/main/img/preview.png"    alt="Anteprima dell'imagine">
+</p>
 
 
-<!-- USAGE EXAMPLES -->
-## Utilizzo
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+
+
+
 
