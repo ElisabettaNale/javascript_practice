@@ -4,7 +4,7 @@
   <ol>
     <li><a href="#il-progetto">Il progetto: the counter</a></li>
     <li><a href="#utilizzo">Utilizzo</a></li>
-    <li><a href="#contribuire">Utilizzo</a></li>
+    <li><a href="#contribuire">Contribuire</a></li>
     <li><a href="#contatti">Contatti</a></li>
   </ol>
 </details>
@@ -26,7 +26,7 @@ In alto viene visualizzato il valore del counter, mentre in basso ci sono tre pu
 ## Preview del progetto:
 
 <p align="center">
-    <img src="https://github.com/ElisabettaNale/javascript_practice/blob/main/img/preview.png"    alt="Anteprima dell'imagine">
+    <img src="https://github.com/ElisabettaNale/javascript_practice/blob/main/img/preview.png"    alt="Anteprima dell'immagine">
 </p>
 
 
@@ -47,27 +47,17 @@ In alto viene visualizzato il valore del counter, mentre in basso ci sono tre pu
 
 Se desideri contribuire al progetto, segui questi passaggi: 
 
-1. Forka il repository su GitHub.
+1. **Forka il repository su GitHub.**
 
-2. Crea un nuovo branch per le tue modifiche.
+2. **Crea un nuovo branch per le tue modifiche.**
 
-3. Invia una request per l'integrazione delle tue modifiche nel repository principale.
+3. **Invia una request per l'integrazione delle tue modifiche nel repository principale.**
 
 
 <!-- CONTATTI -->
 ## Contatti
 
-Il mio sito web professionale (sezioni contatti): https://elisabettanale.github.io/pages/contacts.html
-Profilo Linkedin: [ElisabettaNale](https://www.linkedin.com/in/elisabetta-nale/)
+Per qualsiasi domanda o suggerimenti, puoi contattarmi tramite:
 
-
-
-
-
-
-
-
-
-
-
-
+- **Sito web professionale:** [Sezione contatti](https://elisabettanale.github.io/pages/contacts.html)
+- **Profilo LinkedIn:** [Elisabetta Nale] (https://www.linkedin.com/in/elisabetta-nale/)
