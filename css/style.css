@@ -33,51 +33,9 @@ body {
     justify-content: center;
 }
 
-.number {
-    margin-bottom: 40px;
-    font-size: 50px;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-
-.button {
-    margin: 5px;
-    height: 50px;
-    width: 70px;
-    font-size: 28px;
-    font-weight: bold;
-    border: #fbc8a2 3px solid;
-    border-radius: 10%;
-    background-color: #fbc8a2;
-    color:#465038;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.button:hover {
-    transform: scale(0.9);
-}
-
-.button-reset {
-    margin: 5px;
-    height: 40px;
-    width: 100px;
-    font-size: 18px;
-    font-weight: bold;
-    border: #fbc8a2 1px solid;
-    border-radius: 10%;
-    background-color: #f9ddad;
-    color: #465038;
-    cursor: pointer;
-    transition: 0.8s;
-}
-
-.button-reset:hover {
-    border: #fbc8a2 1px solid;
-    background-color: #fbc8a2;
-    font-size: 20px;
+@media only screen and (max-width: 400px) {
+    .counter {
+        width: 80%;
+        height: 80%;
+    }
 }

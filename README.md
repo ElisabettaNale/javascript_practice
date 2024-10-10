@@ -61,3 +61,6 @@ Per qualsiasi domanda o suggerimenti, puoi contattarmi tramite:
 
 - **Sito web professionale:** [Sezione contatti](https://elisabettanale.github.io/pages/contacts.html)
 - **Profilo LinkedIn:** [Elisabetta Nale] (https://www.linkedin.com/in/elisabetta-nale/)
+
+
+
