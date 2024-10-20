@@ -3,15 +3,11 @@
 ///////////////////////////////////////////////////////////////
 
 // Funzione per creare gli elementi del DOM
-function createElement(type, css_class, text = '') {
+function createElement(type, css_class, text) {
     
     let element = document.createElement(type);
-
-    element.classList.add(css_class)
-
-    if (text) {
-        element.textContent = text;
-    }
+    element.classList.add(css_class);
+    element.textContent = text;
 
     return element;
 }
@@ -54,6 +50,7 @@ function handleEvent(event) {
 
     // click
     if (event.type === 'click') {
+
         if (target === plusButton) {
             number.textContent++;
         } else if (target === minusButton) {
@@ -61,33 +58,24 @@ function handleEvent(event) {
         } else if (target === resetButton) {
             number.textContent = 0;
         }
-    }
+        target.classList.remove('button-hover');
+        target.classList.remove('button-reset-hover');  
 
-    // mouseover/mouseout o touchstart/touchend
-    else if (event.type === 'mouseover' || 
-            event.type === 'mouseout' ||
-            event.type === 'touchstart' ||
-            event.type === 'touchend') {
+    // mouseover/touchstart
+    } else if (event.type === 'mouseover' || event.type === 'touchstart') {
 
-        let isHover = (event.type === 'mouseover' || event.type === 'touchstart');
-
-        if (isHover) {
-
-            if (target === plusButton || target === minusButton) {
-                target.classList.add('button-hover');
-            } else if (target === resetButton) {
-                target.classList.add('button-reset-hover')
-            }
-
-        } else {
-
-            if (target === plusButton || target === minusButton) {
-                target.classList.remove('button-hover');
-            } else if (target === resetButton) {
-                target.classList.remove('button-reset-hover')
-            }
-
+        if (target === plusButton || target === minusButton) {
+            target.classList.add('button-hover');
+        } else if (target === resetButton) {
+            target.classList.add('button-reset-hover')
         }
+    
+    // mouseout/touchend
+    } else if (event.type === 'mouseout' || event.type === 'touchend') {
+
+            target.classList.remove('button-hover');
+            target.classList.remove('button-reset-hover');  
+
     }
 }
 
