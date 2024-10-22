@@ -57,7 +57,9 @@ function handleEvent(event) {
             number.textContent--;
         } else if (target === resetButton) {
             number.textContent = 0;
-        } 
+        }
+        target.classList.remove('button-hover');
+        target.classList.remove('button-reset-hover');  
 
     // mouseover/touchstart
     } else if (event.type === 'mouseover' || event.type === 'touchstart') {
