@@ -57,9 +57,7 @@ function handleEvent(event) {
             number.textContent--;
         } else if (target === resetButton) {
             number.textContent = 0;
-        }
-        target.classList.remove('button-hover');
-        target.classList.remove('button-reset-hover');  
+        } 
 
     // mouseover/touchstart
     } else if (event.type === 'mouseover' || event.type === 'touchstart') {
@@ -79,9 +77,7 @@ function handleEvent(event) {
     }
 }
 
-// Event listeners per click, mouseover/mouseout, touchstart/toouchend
-counter.addEventListener('click', handleEvent);
-counter.addEventListener('mouseover', handleEvent);
-counter.addEventListener('mouseout', handleEvent);
-counter.addEventListener('touchstart', handleEvent);
-counter.addEventListener('touchend', handleEvent);
+// Event listener per click, mouseover/mouseout, touchstart/toouchend
+['click', 'mouseover', 'mouseout', 'touchstart', 'touchend'].forEach(eventType => {
+    counter.addEventListener(eventType, handleEvent);
+});
