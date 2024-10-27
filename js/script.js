@@ -4,17 +4,15 @@
 
 // Funzione per creare gli elementi del DOM
 function createElement(type, css_class, text) {
-    
-    let element = document.createElement(type);
-    element.classList.add(css_class);
-    element.textContent = text;
+  let element = document.createElement(type);
+  element.classList.add(css_class);
+  element.textContent = text;
 
-    return element;
+  return element;
 }
 
-
 ///////////////////////////////////////////////////////////////
-// STRUTTURA DOM   
+// STRUTTURA DOM
 ///////////////////////////////////////////////////////////////
 
 // Inizializza il counter
@@ -28,38 +26,43 @@ counter.appendChild(number);
 let buttonsContainer = createElement("div", "buttons", "");
 counter.appendChild(buttonsContainer);
 
-// Crea i pulsanti +/- 
+// Crea i pulsanti +/-
 let plusButton = createElement("button", "button", "+");
 let minusButton = createElement("button", "button", "-");
 buttonsContainer.appendChild(plusButton);
 buttonsContainer.appendChild(minusButton);
 
-// Crea il pulsante reset 
+// Crea il pulsante reset
 let resetButton = createElement("button", "button-reset", "RESET");
 counter.appendChild(resetButton);
 
-
 ///////////////////////////////////////////////////////////////
-// EVENTI    
+// EVENTI
 ///////////////////////////////////////////////////////////////
 
+// Funzione per aggiungere e rimuovere l'effetto click
+function applyClickEffect(button) {
+    button.classList.add("button-clicked");
+    setTimeout(() => {
+        button.classList.remove("button-clicked");  
+    }, 100);
+}
 // Funzione per gestire gli eventi sui pulsanti
 function handleEvent(event) {
+  let target = event.target;
 
-    let target = event.target;
-
-    // click
-    if (event.type === 'click') {
-
-        if (target === plusButton) {
-            number.textContent++;
-        } else if (target === minusButton) {
-            number.textContent--;
-        } else if (target === resetButton) {
-            number.textContent = 0;
-        }  
+  // click
+  if (event.type === "click") {
+    if (target === plusButton) {
+      number.textContent++;
+    } else if (target === minusButton) {
+      number.textContent--;
+    } else if (target === resetButton) {
+      number.textContent = 0;
     }
+    applyClickEffect(target);
+  }
 }
 
 // Event listener per click
-counter.addEventListener('click', handleEvent);
+counter.addEventListener("click", handleEvent);

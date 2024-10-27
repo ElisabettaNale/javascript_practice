@@ -69,6 +69,10 @@ body {
     cursor: pointer;
 }
 
+.button-clicked {
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+}
 
 @media only screen and (max-width: 400px) {
 
