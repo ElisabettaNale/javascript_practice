@@ -42,10 +42,10 @@ counter.appendChild(resetButton);
 
 // Funzione per aggiungere e rimuovere l'effetto click
 function applyClickEffect(button, effectClass = "button-clicked") {
-    button.classList.add(effectClass);
-    setTimeout(() => {
-        button.classList.remove(effectClass);  
-    }, 100);
+  button.classList.add(effectClass);
+  setTimeout(() => {
+    button.classList.remove(effectClass);
+  }, 100);
 }
 // Funzione per gestire gli eventi sui pulsanti
 function handleEvent(event) {
