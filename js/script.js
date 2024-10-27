@@ -3,9 +3,9 @@
 ///////////////////////////////////////////////////////////////
 
 // Funzione per creare gli elementi del DOM
-function createElement(type, css_class, text) {
+function createElement(type, cssClass, text) {
   let element = document.createElement(type);
-  element.classList.add(css_class);
+  element.classList.add(cssClass);
   element.textContent = text;
 
   return element;
@@ -41,10 +41,10 @@ counter.appendChild(resetButton);
 ///////////////////////////////////////////////////////////////
 
 // Funzione per aggiungere e rimuovere l'effetto click
-function applyClickEffect(button) {
-    button.classList.add("button-clicked");
+function applyClickEffect(button, effectClass = "button-clicked") {
+    button.classList.add(effectClass);
     setTimeout(() => {
-        button.classList.remove("button-clicked");  
+        button.classList.remove(effectClass);  
     }, 100);
 }
 // Funzione per gestire gli eventi sui pulsanti
